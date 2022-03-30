@@ -4,7 +4,10 @@ fetch("data.json")
         let subjects = [... new Set(json.flat())]
 
         print("one")
-        document.getElementById("subject-selects").children.forEach(element => {
+        document.querySelectorAll('.select-input').forEach(function(button) {
+            // Now do something with my button
+        });
+        document.getElementsByClassName("select-input").forEach(element => {
             print("two")
             for (subject in subjects) {
                 console.log(subjects)
