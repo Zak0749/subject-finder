@@ -3,18 +3,14 @@ fetch("data.json")
     .then(json => {
         let subjects = [... new Set(json.flat())]
 
-        print("one")
-        document.querySelectorAll('.select-input').forEach(function(button) {
-            // Now do something with my button
-        });
-        document.getElementsByClassName("select-input").forEach(element => {
+        console.log("one")
+        document.querySelectorAll('.select-input').forEach((item) => {
             print("two")
-            for (subject in subjects) {
-                console.log(subjects)
+            subjects.forEach((subject) => {
+                console.log(subject)
                 let option = document.createElement("option");
                 option.innerText = subject
-            }
+                item.appendChild(option)
+            })
         });
     });
-
-//     <div id="subject-selects">
