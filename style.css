@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-body { 
-    font-family: 'Roboto', sans-serif;
+table, th, td {
+  	width: 100%;
+	table-layout: fixed;
 }
 
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-  width: 100%;
-table-layout: fixed;
+th, td {
+	border-left: 1px solid black !important;
+	border-right: 1px solid black !important;
 }
+
